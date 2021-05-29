@@ -1,0 +1,107 @@
+<div class="form__title">
+  <img class="form__img" src="assets/img/character.png" alt="character.png">
+  <div class="form__title--foodle">
+    <span class="form__title--1">F</span>
+    <span class="form__title--2">O</span>
+    <span class="form__title--3">O</span>
+    <span class="form__title--4">D</span>
+    <span class="form__title--5">L</span>
+    <span class="form__title--6">E</span>
+  </div>
+  <div class="form__title--form">FORM</div>
+</div>
+<form class="form__form" action="">
+  <div class="form__name">
+    이름<input type="text" placeholder="본인 이름">
+  </div>
+  <div class="form__restaurant">
+    방문 레스토랑<input type="text" placeholder="레스토랑 이름">
+  </div>
+  <div class="form__menu">
+    메뉴<input type="text" placeholder="메뉴 이름">
+  </div>
+  <div class="form__taste">
+    <div class="form__taste--taste">첫맛</div>
+    <div class="form__taste--select">
+      <select name="taste-first" id="taste-first">
+        <option value="단맛">단맛</option>
+        <option value="신맛">신맛</option>
+        <option value="짠맛">짠맛</option>
+        <option value="쓴맛">쓴맛</option>
+        <option value="지방맛">지방맛</option>
+        <option value="감칠맛">감칠맛</option>
+      </select>
+      <div class="form__graph--first">
+        <input type="hidden" id="taste-first-value" name="taste-first-value" value="5">
+        <div class="form__graph--1" (click)="graphOnClick(1, 1)"
+          (mouseenter)="graphEnter(1, 1)" (mouseleave)="graphLeave(1)"></div>
+        <div class="form__graph--2" (click)="graphOnClick(1, 2)"
+          (mouseenter)="graphEnter(1, 2)" (mouseleave)="graphLeave(1)"></div>
+        <div class="form__graph--3" (click)="graphOnClick(1, 3)"
+          (mouseenter)="graphEnter(1, 3)" (mouseleave)="graphLeave(1)"></div>
+        <div class="form__graph--4" (click)="graphOnClick(1, 4)"
+          (mouseenter)="graphEnter(1, 4)" (mouseleave)="graphLeave(1)"></div>
+        <div class="form__graph--5" (click)="graphOnClick(1, 5)"
+          (mouseenter)="graphEnter(1, 5)" (mouseleave)="graphLeave(1)"></div>
+      </div>
+    </div>
+  </div>
+  <div class="form__taste">
+    <div class="form__taste--taste">중간맛</div>
+    <div class="form__taste--select">
+      <select name="taste-mid" id="taste-mid">
+        <option value="단맛">단맛</option>
+        <option value="신맛">신맛</option>
+        <option value="짠맛">짠맛</option>
+        <option value="쓴맛">쓴맛</option>
+        <option value="지방맛">지방맛</option>
+        <option value="감칠맛">감칠맛</option>
+      </select>
+      <div class="form__graph--mid">
+        <input type="hidden" id="taste-mid-value" name="taste-mid-value" value="5">
+        <div class="form__graph--1" (click)="graphOnClick(2, 1)"
+          (mouseenter)="graphEnter(2, 1)" (mouseleave)="graphLeave(2)"></div>
+        <div class="form__graph--2" (click)="graphOnClick(2, 2)"
+          (mouseenter)="graphEnter(2, 2)" (mouseleave)="graphLeave(2)"></div>
+        <div class="form__graph--3" (click)="graphOnClick(2, 3)"
+          (mouseenter)="graphEnter(2, 3)" (mouseleave)="graphLeave(2)"></div>
+        <div class="form__graph--4" (click)="graphOnClick(2, 4)"
+          (mouseenter)="graphEnter(2, 4)" (mouseleave)="graphLeave(2)"></div>
+        <div class="form__graph--5" (click)="graphOnClick(2, 5)"
+          (mouseenter)="graphEnter(2, 5)" (mouseleave)="graphLeave(2)"></div>
+      </div>
+    </div>
+  </div>
+  <div class="form__taste">
+    <div class="form__taste--taste">끝맛</div>
+    <div class="form__taste--select">
+      <select name="taste-last" id="taste-last">
+        <option value="단맛">단맛</option>
+        <option value="신맛">신맛</option>
+        <option value="짠맛">짠맛</option>
+        <option value="쓴맛">쓴맛</option>
+        <option value="지방맛">지방맛</option>
+        <option value="감칠맛">감칠맛</option>
+      </select>
+      <div class="form__graph--last">
+        <input type="hidden" id="taste-last-value" name="taste-last-value" value="5">
+        <div class="form__graph--1" (click)="graphOnClick(3, 1)"
+          (mouseenter)="graphEnter(3, 1)" (mouseleave)="graphLeave(3)"></div>
+        <div class="form__graph--2" (click)="graphOnClick(3, 2)"
+          (mouseenter)="graphEnter(3, 2)" (mouseleave)="graphLeave(3)"></div>
+        <div class="form__graph--3" (click)="graphOnClick(3, 3)"
+          (mouseenter)="graphEnter(3, 3)" (mouseleave)="graphLeave(3)"></div>
+        <div class="form__graph--4" (click)="graphOnClick(3, 4)"
+          (mouseenter)="graphEnter(3, 4)" (mouseleave)="graphLeave(3)"></div>
+        <div class="form__graph--5" (click)="graphOnClick(3, 5)"
+          (mouseenter)="graphEnter(3, 5)" (mouseleave)="graphLeave(3)"></div>
+      </div>
+    </div>
+  </div>
+  <div class="form__detail">
+    <textarea name="detail" id="detail" rows="5em" placeholder="메뉴 및 레스토랑 평가"></textarea>
+  </div>
+  <div class="form__submit">
+    <input type="submit">
+  </div>
+</form>

@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:host{
+  --font: 'yg-jalnan';
+  --color-one: #f8b55e;
+  --color-two: #bc6525;
+  --color-three: #dfdfdd;
+  --color-four: #455f54;
+  --color-five: #d8ccad;
+  --color-six: #941e34;
+  --grad-one: #eedf9c;
+  --grad-two: #f4d063;
+  --grad-three: #f8c326;
+  --grad-four: #e0b000;
+  --grad-five: #c08700;
+
+  display: block;
+  width: 100vw;
+  max-width: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
+  align-itrems: center;
+
+  font-family: var(--font);
+  font-size: 2rem;
+}
+
+input{
+  display: block;
+
+  font-family: var(--font);
+  font-size: 1.5rem;
+
+  border-color: black;
+  border-width: .2rem;
+  border-radius: .5rem;
+}
+
+input[type="text"]{
+  width: 97%;
+
+  padding: .4rem;
+}
+
+.opacityZero{
+  opacity: 0;
+}
+
+.form__img{
+  margin-top: 3rem;
+  margin-bottom: -3.5rem;
+  margin-left: -25rem;
+}
+
+.form__title--foodle{
+  color: white;
+  font-size: 8rem;
+  font-style: italic;
+}
+
+.form__title--foodle>span{
+  margin-left: -1rem;
+}
+
+.form__title--1{
+  -webkit-text-stroke: 5px var(--color-one);
+}
+
+.form__title--2{
+  -webkit-text-stroke: 5px var(--color-two);
+}
+
+.form__title--3{
+  -webkit-text-stroke: 5px var(--color-three);
+}
+
+.form__title--4{
+  -webkit-text-stroke: 5px var(--color-four);
+}
+
+.form__title--5{
+  -webkit-text-stroke: 5px var(--color-five);
+}
+
+.form__title--6{
+  -webkit-text-stroke: 5px var(--color-six);
+}
+
+.form__title--form{
+  width: 40rem;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3rem;
+  text-align: right;
+
+  font-size: 2.5rem;
+}
+
+.form__title{
+  text-align: center;
+}
+
+.form__form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form__form>*{
+  margin-bottom: 2rem;
+}
+
+.form__form>div{
+  width: 80vw;
+  max-width: 480px;
+}
+
+.form__taste{
+  display: flex;
+  align-items: center;
+}
+
+.form__taste--taste{
+  width: 20vw;
+  max-width: 120px;
+}
+
+.form__taste--select{
+  display: inline-block;
+}
+
+.form__taste--select>select{
+  display: block;
+  width: 7rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  margin-left: 0.1rem;
+
+  font-family: var(--font);
+  border-color: black;
+  border-width: .2rem;
+  border-radius: .5rem;
+}
+
+.form__taste--select>select:hover{
+  cursor:pointer;
+}
+
+.form__taste--select>select>option{
+  font-family: var(--font);
+}
+
+.form__graph--first,
+.form__graph--mid,
+.form__graph--last{
+  display:flex;
+
+  /* border-style: solid;
+  border-color: black;
+  border-width: .2rem;
+  border-radius: .5rem; */
+}
+
+.form__graph--1,
+.form__graph--2,
+.form__graph--3,
+.form__graph--4,
+.form__graph--5{
+  width: 12vw;
+  max-width: 72px;
+  height: 2rem;
+  margin: 0.1rem;
+
+  transition: 0.5s;
+}
+
+
+.form__graph--1{
+  background-color: var(--grad-one);
+}
+
+.form__graph--2{
+  background-color: var(--grad-two);
+}
+
+.form__graph--3{
+  background-color: var(--grad-three);
+}
+
+.form__graph--4{
+  background-color: var(--grad-four);
+}
+
+.form__graph--5{
+  background-color: var(--grad-five);
+}
+
+.form__graph--1:hover,
+.form__graph--2:hover,
+.form__graph--3:hover,
+.form__graph--4:hover,
+.form__graph--5:hover{
+  cursor: pointer;
+  /* opacity: 100;
+  transform: scale(1.05); */
+}
+
+.form__detail{
+  width: 80vw;
+  max-width: 480px;
+}
+
+.form__detail>textarea{
+  width: 100%;
+
+  font-size: 1.5rem;
+  font-family: var(--font);
+
+  border-color: black;
+  border-width: .2rem;
+  border-radius: .5rem;
+}
+
+.form__submit>input{
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: 0.5s;
+}
+
+.form__submit>input:hover{
+  cursor: pointer;
+  background: var(--grad-one);
+  transform: scale(1.05);
+}
